@@ -1,6 +1,6 @@
 {
   "name": "user-data-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The package is used to take input easy way.",
   "main": "index.js",
   "scripts": {
