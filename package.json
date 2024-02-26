@@ -1,0 +1,18 @@
+{
+  "name": "user-data-input",
+  "version": "1.0.0",
+  "description": "The package is used to take input easy way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/nazimfeni/user-input-npm-package.git)"
+  },
+  "keywords": [
+    "data_input"
+  ],
+  "author": "Md. Nazim Uddin",
+  "license": "ISC"
+}
