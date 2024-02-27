@@ -1,19 +1,22 @@
-const readline = require('readline').promises;
+const readline = require('readline');
 
-async function readInput(prompt) {
+function askQuestion(prompt) {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
   });
 
-  try {
-    const input = await rl.question(prompt);
-    return input.trim(); // Remove leading/trailing whitespace
-  } finally {
-    rl.close();
-  }
+  return new Promise((resolve) => {
+    rl.question(prompt, (answer) => {
+      resolve(answer.trim());
+      rl.close();
+    });
+  });
+}
 
-  
+async function readInput(prompt) {
+  const input = await askQuestion(prompt);
+  return input;
 }
 
 
